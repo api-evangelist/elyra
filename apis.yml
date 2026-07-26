@@ -1,7 +1,28 @@
 aid: elyra
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elyra.png
 name: Elyra
-description: Elyra is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Elyra is an AI-powered restaurant operations and reservation platform, backed by
+  Y Combinator (Spring 2026 batch) and founded in Stockholm by Felix Odeberg Glasenapp
+  and Alan Mando. The product combines an AI voice agent that answers reservation phone
+  calls, an email concierge that handles confirmations and follow-ups, guest intelligence
+  that builds diner profiles from preferences and booking history, smart table-allocation
+  and walk-in optimization, plus analytics and campaign outreach tooling. It serves
+  restaurant groups primarily across Scandinavia, addressing the roughly 40% of incoming
+  calls restaurants miss and the booking delays that follow. Elyra operates as a
+  business-facing SaaS application at app.elyrasystems.com and does not currently publish
+  a public developer API, SDK, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/elyra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,52 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Restaurant Technology
+- Reservations
+- Artificial Intelligence
+- Hospitality
+- Voice Agents
+- SaaS
 apis: []
+common:
+- type: TrustCenter
+  url: security/elyra-trust-center.yml
+- type: Website
+  url: https://www.elyrasystems.com/
+- type: About
+  url: https://www.elyrasystems.com/about
+- type: Support
+  url: https://www.elyrasystems.com/resources/help
+- type: Blog
+  url: https://www.elyrasystems.com/blog
+- type: ChangeLog
+  name: Product Updates
+  url: https://www.elyrasystems.com/resources/updates
+- type: SignUp
+  name: Login
+  url: https://app.elyrasystems.com/
+- type: TermsOfService
+  url: https://www.elyrasystems.com/terms
+- type: PrivacyPolicy
+  url: https://www.elyrasystems.com/privacy
+- type: Compliance
+  name: GDPR compliant, SOC 2 in progress
+  url: https://trust.elyrasystems.com/
+- type: Security
+  name: Vulnerability reporting via Trust Center
+  url: https://trust.elyrasystems.com/
+- type: DomainSecurity
+  url: security/elyra-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

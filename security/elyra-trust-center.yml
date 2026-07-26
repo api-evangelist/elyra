@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.elyrasystems.com/
+url: https://trust.elyrasystems.com/
+certifications:
+- name: GDPR
+  status: compliant
+  valid_through: '2027-04-26'
+- name: SOC 2
+  status: in-progress
+  valid_through: '2027-04-26'
+subprocessors:
+- Resend
+- Anthropic
+- OpenAI
+- AWS
+- Stripe
+- GitHub
+hosting: AWS
+vulnerability_reporting: email contact via trust center
+evidence:
+- source: https://trust.elyrasystems.com/
+  keywords:
+  - soc 2
+  - trust center
+  - gdpr
